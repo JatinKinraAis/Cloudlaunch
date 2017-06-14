@@ -120,7 +120,7 @@ class CustomHyperlinkedRelatedField(relations.HyperlinkedRelatedField):
                                if key in self.parent_url_kwargs})
         if self.lookup_field:
             lookup_value = util.getattrd(obj, self.lookup_field)
-            lookup_value = '1231'
+            #lookup_value = '1231'
             # lookup_value = '%2Fsubscriptions%2F7904d702-e01c-4826-8519-f5a25c866a96%2FresourceGroups%2FTEST-RG%2Fproviders%2FMicrosoft.Network%2FnetworkSecurityGroups%2FMysggroup'
             if lookup_value:
                 reverse_kwargs.update({self.lookup_url_kwarg: lookup_value})

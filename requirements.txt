@@ -5,7 +5,7 @@ wheel==0.24.0
 django-rest-auth==0.8.2
 django-allauth>=0.24.1
 drf-nested-routers>=0.11.1
-git+https://github.com/ms-azure-cloudbroker/cloudbridge@azure_dev_v2
+git+https://github.com/ms-azure-cloudbroker/cloudbridge@azure_dev_v3
 django-model-utils>=2.4
 django-celery>=3.1.17
 django-fernet-fields==0.4 # for encryption of user credentials

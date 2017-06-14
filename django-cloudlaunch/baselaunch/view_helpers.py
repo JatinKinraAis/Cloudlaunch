@@ -1,6 +1,9 @@
 from baselaunch import domain_model
 from baselaunch import models
 
+import logging
+
+log = logging.getLogger(__name__)
 
 def get_cloud_provider(view, cloud_id = None):
     """
@@ -14,6 +17,7 @@ def get_cloud_provider(view, cloud_id = None):
         slug=cloud_pk).select_subclasses().first()
 
     request_creds = get_credentials(cloud, view.request)
+    log.info(request_creds)
     return domain_model.get_cloud_provider(cloud, request_creds)
 
 
