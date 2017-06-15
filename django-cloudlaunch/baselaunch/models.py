@@ -104,7 +104,7 @@ class AZURE(Cloud):
     resource_group = models.CharField(max_length=100, blank=True, null=False)
     region_name = models.CharField(max_length=100, blank=True, null=False)
     storage_account = models.CharField(max_length=100, blank=True, null=False)
-    vm_default_user_name = models.CharField(max_length=100, blank=True, null=False)
+    azure_vm_default_user_name = models.CharField(max_length=100, blank=True, null=False)
 
 
     class Meta:

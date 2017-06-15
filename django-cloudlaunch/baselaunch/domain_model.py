@@ -50,7 +50,7 @@ def get_cloud_provider(cloud, cred_dict):
                       'azure_region_name': cloud.region_name,
                       'azure_resource_group': cloud.resource_group,
                       'storage_account':cloud.storage_account,
-                      'vm_default_user_name': cloud.vm_default_user_name
+                      'azure_vm_default_user_name': cloud.azure_vm_default_user_name
                  }
         config.update(cred_dict)
         return CloudProviderFactory().create_provider(ProviderList.AZURE,

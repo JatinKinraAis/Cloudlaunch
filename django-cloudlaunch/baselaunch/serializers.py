@@ -24,6 +24,9 @@ from celery.result import AsyncResult
 from baselaunch import util
 from django_countries.serializer_fields import CountryField
 
+import logging
+
+log = logging.getLogger(__name__)
 
 class ZoneSerializer(serializers.Serializer):
     id = serializers.CharField()
@@ -555,7 +558,7 @@ class CloudSerializer(serializers.ModelSerializer):
                 'region_name': azure.region_name,
                 'resource_group': azure.resource_group,
                 'storage_account': azure.storage_account,
-                'vm_default_user_name': azure.vm_default_user_name
+                'azure_vm_default_user_name': azure.azure_vm_default_user_name
                 }
         else:
             return {}
@@ -719,23 +722,37 @@ class DeploymentSerializer(serializers.ModelSerializer):
         request = self.context.get('view').request
         credentials = view_helpers.get_credentials(cloud, request)
         try:
+            log.info("entering ---")
+            log.info(version.backend_component_name)
             handler = util.import_class(version.backend_component_name)()
+            log.info("1")
             app_config = validated_data.get("config_app", {})
-
+            log.info("2")
             merged_config = jsonmerge.merge(default_combined_config, app_config)
+            log.info("3")
             final_ud_config = handler.process_app_config(name, cloud_version_config,
                                                          credentials, merged_config)
+            log.info("4")
             sanitised_app_config = handler.sanitise_app_config(merged_config)
+            log.info("5")
             async_result = tasks.launch_appliance.delay(name, cloud_version_config,
                                                         credentials, merged_config, final_ud_config)
+            log.info("6")
 
             del validated_data['application']
+            log.info("7")
             del validated_data['config_app']
+            log.info("8")
             validated_data['owner_id'] = request.user.id
+            log.info("9")
             validated_data['application_config'] = json.dumps(merged_config)
+            log.info("10")
             validated_data['celery_task_id'] = async_result.task_id
+            log.info("11")
             app_deployment = super(DeploymentSerializer, self).create(validated_data)
+            log.info("12")
             self.log_usage(cloud_version_config, app_deployment, sanitised_app_config, request.user)
+            log.info("13")
             return app_deployment
         except serializers.ValidationError as ve:
             raise ve

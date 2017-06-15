@@ -17,7 +17,6 @@ def get_cloud_provider(view, cloud_id = None):
         slug=cloud_pk).select_subclasses().first()
 
     request_creds = get_credentials(cloud, view.request)
-    log.info(request_creds)
     return domain_model.get_cloud_provider(cloud, request_creds)
 
 
@@ -79,12 +78,12 @@ def get_credentials_from_request(cloud, request):
     elif isinstance(cloud, models.AZURE):
         azure_subscription_id = request.META.get('HTTP_CL_AZURE_SUBSCRIPTION_ID')
         azure_client_id = request.META.get('HTTP_CL_AZURE_CLIENT_ID')
-        azure_client_secret = request.META.get('HTTP_CL_AZURE_CLIENT_SECRET')
+        azure_secret = request.META.get('HTTP_CL_AZURE_SECRET')
         azure_tenant = request.META.get('HTTP_CL_AZURE_TENANT')
-        if azure_subscription_id and azure_client_id and azure_client_secret and azure_tenant:
+        if azure_subscription_id and azure_client_id and azure_secret and azure_tenant:
             return {'azure_subscription_id': azure_subscription_id,
                     'azure_client_id': azure_client_id,
-                    'azure_client_secret': azure_client_secret,
+                    'azure_secret': azure_secret,
                     'azure_tenant': azure_tenant
                     }
         else:
@@ -99,6 +98,8 @@ def get_credentials_by_id(cloud, request, credentials_id):
     current user's profile. If the user is not logged in or no credentials
     are found, returns an empty dict.
     """
+    log.info("*** get creds by id - " + str(cloud.__dict__))
+    log.info(str(credentials_id))
     if request.user.is_anonymous():
         return {}
     profile = request.user.userprofile
@@ -106,6 +107,7 @@ def get_credentials_by_id(cloud, request, credentials_id):
     if credentials_id:
         credentials = profile.credentials.filter(cloud=cloud, id=credentials_id). \
             select_subclasses().first()
+        log.info(str(credentials.__dict__))
         if credentials:
             return credentials.as_dict()
     return {}
