@@ -1,9 +1,6 @@
 from baselaunch import domain_model
 from baselaunch import models
 
-import logging
-
-log = logging.getLogger(__name__)
 
 def get_cloud_provider(view, cloud_id = None):
     """
@@ -98,8 +95,6 @@ def get_credentials_by_id(cloud, request, credentials_id):
     current user's profile. If the user is not logged in or no credentials
     are found, returns an empty dict.
     """
-    log.info("*** get creds by id - " + str(cloud.__dict__))
-    log.info(str(credentials_id))
     if request.user.is_anonymous():
         return {}
     profile = request.user.userprofile
@@ -107,7 +102,6 @@ def get_credentials_by_id(cloud, request, credentials_id):
     if credentials_id:
         credentials = profile.credentials.filter(cloud=cloud, id=credentials_id). \
             select_subclasses().first()
-        log.info(str(credentials.__dict__))
         if credentials:
             return credentials.as_dict()
     return {}

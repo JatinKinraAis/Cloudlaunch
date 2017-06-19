@@ -1100,3 +1100,60 @@ storage_size: null
 storage_type: transient
 worker_post_start_script_url: null
 
+[2017-06-15 17:41:42,865 baselaunch.view_helpers:101 INFO] *** get creds by id - {'_state': <django.db.models.base.ModelState object at 0x013627D0>, 'added': datetime.datetime(2017, 6, 14, 15, 8, 21, 725004, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 8, 47, 6, 490948, tzinfo=<UTC>), 'name': 'Azure Base', 'access_instructions_url': '', 'kind': 'cloud', 'slug': 'azure-base', 'cloud_ptr_id': 'azure-base', 'resource_group': 'TEST-RG', 'region_name': 'eastus', 'storage_account': 'eastussa123', 'azure_vm_default_user_name': 'jatin', '_cloud_ptr_cache': <AZURE: Azure Base>}
+[2017-06-15 17:41:43,022 baselaunch.view_helpers:102 INFO] 2
+[2017-06-15 17:41:43,085 baselaunch.view_helpers:110 INFO] {'_state': <django.db.models.base.ModelState object at 0x0136B650>, 'id': 2, 'added': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'name': 'Azure Base credsss', 'default': True, 'cloud_id': 'azure-base', 'user_profile_id': 'jatin', 'credentials_ptr_id': 2, 'azure_subscription_id': '7904d702-e01c-4826-8519-f5a25c866a96', 'azure_client_id': '69621fe1-f59f-43de-8799-269007c76b95', 'azure_secret': 'Orcw9U5Kd4cUDntDABg0dygN32RQ4FGBYyLRaJ/BlrM=', 'azure_tenant': '75ec242e-054d-4b22-98a9-a4602ebb6027', '_credentials_ptr_cache': <AzureCredentials: Azure Base credsss>}
+[2017-06-15 17:41:43,197 baselaunch.view_helpers:101 INFO] *** get creds by id - {'_state': <django.db.models.base.ModelState object at 0x01349750>, 'added': datetime.datetime(2017, 6, 14, 15, 8, 21, 725004, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 8, 47, 6, 490948, tzinfo=<UTC>), 'name': 'Azure Base', 'access_instructions_url': '', 'kind': 'cloud', 'slug': 'azure-base', 'cloud_ptr_id': 'azure-base', 'resource_group': 'TEST-RG', 'region_name': 'eastus', 'storage_account': 'eastussa123', 'azure_vm_default_user_name': 'jatin', '_cloud_ptr_cache': <AZURE: Azure Base>}
+[2017-06-15 17:41:43,297 baselaunch.view_helpers:102 INFO] 2
+[2017-06-15 17:41:43,305 baselaunch.view_helpers:110 INFO] {'_state': <django.db.models.base.ModelState object at 0x01329650>, 'id': 2, 'added': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'name': 'Azure Base credsss', 'default': True, 'cloud_id': 'azure-base', 'user_profile_id': 'jatin', 'credentials_ptr_id': 2, 'azure_subscription_id': '7904d702-e01c-4826-8519-f5a25c866a96', 'azure_client_id': '69621fe1-f59f-43de-8799-269007c76b95', 'azure_secret': 'Orcw9U5Kd4cUDntDABg0dygN32RQ4FGBYyLRaJ/BlrM=', 'azure_tenant': '75ec242e-054d-4b22-98a9-a4602ebb6027', '_credentials_ptr_cache': <AzureCredentials: Azure Base credsss>}
+[2017-06-15 17:41:43,470 baselaunch.view_helpers:101 INFO] *** get creds by id - {'_state': <django.db.models.base.ModelState object at 0x01330970>, 'added': datetime.datetime(2017, 6, 14, 15, 8, 21, 725004, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 8, 47, 6, 490948, tzinfo=<UTC>), 'name': 'Azure Base', 'access_instructions_url': '', 'kind': 'cloud', 'slug': 'azure-base', 'cloud_ptr_id': 'azure-base', 'resource_group': 'TEST-RG', 'region_name': 'eastus', 'storage_account': 'eastussa123', 'azure_vm_default_user_name': 'jatin', '_cloud_ptr_cache': <AZURE: Azure Base>}
+[2017-06-15 17:41:43,704 baselaunch.view_helpers:101 INFO] *** get creds by id - {'_state': <django.db.models.base.ModelState object at 0x01341730>, 'added': datetime.datetime(2017, 6, 14, 15, 8, 21, 725004, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 8, 47, 6, 490948, tzinfo=<UTC>), 'name': 'Azure Base', 'access_instructions_url': '', 'kind': 'cloud', 'slug': 'azure-base', 'cloud_ptr_id': 'azure-base', 'resource_group': 'TEST-RG', 'region_name': 'eastus', 'storage_account': 'eastussa123', 'azure_vm_default_user_name': 'jatin', '_cloud_ptr_cache': <AZURE: Azure Base>}
+[2017-06-15 17:41:43,852 baselaunch.view_helpers:102 INFO] 2
+[2017-06-15 17:41:43,913 baselaunch.view_helpers:110 INFO] {'_state': <django.db.models.base.ModelState object at 0x01350350>, 'id': 2, 'added': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'name': 'Azure Base credsss', 'default': True, 'cloud_id': 'azure-base', 'user_profile_id': 'jatin', 'credentials_ptr_id': 2, 'azure_subscription_id': '7904d702-e01c-4826-8519-f5a25c866a96', 'azure_client_id': '69621fe1-f59f-43de-8799-269007c76b95', 'azure_secret': 'Orcw9U5Kd4cUDntDABg0dygN32RQ4FGBYyLRaJ/BlrM=', 'azure_tenant': '75ec242e-054d-4b22-98a9-a4602ebb6027', '_credentials_ptr_cache': <AzureCredentials: Azure Base credsss>}
+[2017-06-15 17:41:43,857 baselaunch.view_helpers:101 INFO] *** get creds by id - {'_state': <django.db.models.base.ModelState object at 0x01300EF0>, 'added': datetime.datetime(2017, 6, 14, 15, 8, 21, 725004, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 8, 47, 6, 490948, tzinfo=<UTC>), 'name': 'Azure Base', 'access_instructions_url': '', 'kind': 'cloud', 'slug': 'azure-base', 'cloud_ptr_id': 'azure-base', 'resource_group': 'TEST-RG', 'region_name': 'eastus', 'storage_account': 'eastussa123', 'azure_vm_default_user_name': 'jatin', '_cloud_ptr_cache': <AZURE: Azure Base>}
+[2017-06-15 17:41:43,915 baselaunch.view_helpers:102 INFO] 2
+[2017-06-15 17:41:43,925 baselaunch.view_helpers:110 INFO] {'_state': <django.db.models.base.ModelState object at 0x01394990>, 'id': 2, 'added': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'name': 'Azure Base credsss', 'default': True, 'cloud_id': 'azure-base', 'user_profile_id': 'jatin', 'credentials_ptr_id': 2, 'azure_subscription_id': '7904d702-e01c-4826-8519-f5a25c866a96', 'azure_client_id': '69621fe1-f59f-43de-8799-269007c76b95', 'azure_secret': 'Orcw9U5Kd4cUDntDABg0dygN32RQ4FGBYyLRaJ/BlrM=', 'azure_tenant': '75ec242e-054d-4b22-98a9-a4602ebb6027', '_credentials_ptr_cache': <AzureCredentials: Azure Base credsss>}
+[2017-06-15 17:41:43,771 baselaunch.view_helpers:102 INFO] 2
+[2017-06-15 17:41:43,937 baselaunch.view_helpers:110 INFO] {'_state': <django.db.models.base.ModelState object at 0x0138DFD0>, 'id': 2, 'added': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'name': 'Azure Base credsss', 'default': True, 'cloud_id': 'azure-base', 'user_profile_id': 'jatin', 'credentials_ptr_id': 2, 'azure_subscription_id': '7904d702-e01c-4826-8519-f5a25c866a96', 'azure_client_id': '69621fe1-f59f-43de-8799-269007c76b95', 'azure_secret': 'Orcw9U5Kd4cUDntDABg0dygN32RQ4FGBYyLRaJ/BlrM=', 'azure_tenant': '75ec242e-054d-4b22-98a9-a4602ebb6027', '_credentials_ptr_cache': <AzureCredentials: Azure Base credsss>}
+[2017-06-15 17:41:58,003 baselaunch.view_helpers:101 INFO] *** get creds by id - {'_state': <django.db.models.base.ModelState object at 0x067F4590>, 'added': datetime.datetime(2017, 6, 14, 15, 8, 21, 725004, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 8, 47, 6, 490948, tzinfo=<UTC>), 'name': 'Azure Base', 'access_instructions_url': '', 'kind': 'cloud', 'slug': 'azure-base', 'cloud_ptr_id': 'azure-base', 'resource_group': 'TEST-RG', 'region_name': 'eastus', 'storage_account': 'eastussa123', 'azure_vm_default_user_name': 'jatin', '_cloud_ptr_cache': <AZURE: Azure Base>}
+[2017-06-15 17:41:58,063 baselaunch.view_helpers:102 INFO] 2
+[2017-06-15 17:41:58,073 baselaunch.view_helpers:110 INFO] {'_state': <django.db.models.base.ModelState object at 0x067FB0D0>, 'id': 2, 'added': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'name': 'Azure Base credsss', 'default': True, 'cloud_id': 'azure-base', 'user_profile_id': 'jatin', 'credentials_ptr_id': 2, 'azure_subscription_id': '7904d702-e01c-4826-8519-f5a25c866a96', 'azure_client_id': '69621fe1-f59f-43de-8799-269007c76b95', 'azure_secret': 'Orcw9U5Kd4cUDntDABg0dygN32RQ4FGBYyLRaJ/BlrM=', 'azure_tenant': '75ec242e-054d-4b22-98a9-a4602ebb6027', '_credentials_ptr_cache': <AzureCredentials: Azure Base credsss>}
+[2017-06-15 17:42:20,242 baselaunch.view_helpers:101 INFO] *** get creds by id - {'_state': <django.db.models.base.ModelState object at 0x0680D770>, 'added': datetime.datetime(2017, 6, 14, 15, 8, 21, 725004, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 8, 47, 6, 490948, tzinfo=<UTC>), 'name': 'Azure Base', 'access_instructions_url': '', 'kind': 'cloud', 'slug': 'azure-base'}
+[2017-06-15 17:42:20,243 baselaunch.view_helpers:102 INFO] 2
+[2017-06-15 17:42:20,251 baselaunch.view_helpers:110 INFO] {'_state': <django.db.models.base.ModelState object at 0x06817950>, 'id': 2, 'added': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'updated': datetime.datetime(2017, 6, 15, 4, 21, 57, 604196, tzinfo=<UTC>), 'name': 'Azure Base credsss', 'default': True, 'cloud_id': 'azure-base', 'user_profile_id': 'jatin', 'credentials_ptr_id': 2, 'azure_subscription_id': '7904d702-e01c-4826-8519-f5a25c866a96', 'azure_client_id': '69621fe1-f59f-43de-8799-269007c76b95', 'azure_secret': 'Orcw9U5Kd4cUDntDABg0dygN32RQ4FGBYyLRaJ/BlrM=', 'azure_tenant': '75ec242e-054d-4b22-98a9-a4602ebb6027', '_credentials_ptr_cache': <AzureCredentials: Azure Base credsss>}
+[2017-06-15 17:42:20,347 baselaunch.serializers:725 INFO] entering ---
+[2017-06-15 17:42:20,350 baselaunch.serializers:726 INFO] baselaunch.backend_plugins.gvl_app.CloudManAppPlugin
+[2017-06-15 17:42:20,384 baselaunch.serializers:728 INFO] 1
+[2017-06-15 17:42:20,387 baselaunch.serializers:730 INFO] 2
+[2017-06-15 17:42:20,390 baselaunch.serializers:732 INFO] 3
+[2017-06-15 17:42:20,395 baselaunch.serializers:735 INFO] 4
+[2017-06-15 17:42:20,396 baselaunch.serializers:737 INFO] 5
+[2017-06-15 17:42:20,634 baselaunch.serializers:740 INFO] 6
+[2017-06-15 17:42:20,635 baselaunch.serializers:743 INFO] 7
+[2017-06-15 17:42:20,636 baselaunch.serializers:745 INFO] 8
+[2017-06-15 17:42:20,636 baselaunch.serializers:747 INFO] 9
+[2017-06-15 17:42:20,636 baselaunch.serializers:749 INFO] 10
+[2017-06-15 17:42:20,637 baselaunch.serializers:751 INFO] 11
+[2017-06-15 17:42:20,665 baselaunch.serializers:753 INFO] 12
+[2017-06-15 17:42:20,712 baselaunch.serializers:755 INFO] 13
+[2017-06-15 17:42:35,894 baselaunch.backend_plugins.base_vm_app:245 INFO] Launching base_vm with UD:
+azure_client_id: 69621fe1-f59f-43de-8799-269007c76b95
+azure_secret: Orcw9U5Kd4cUDntDABg0dygN32RQ4FGBYyLRaJ/BlrM=
+azure_subscription_id: 7904d702-e01c-4826-8519-f5a25c866a96
+azure_tenant: 75ec242e-054d-4b22-98a9-a4602ebb6027
+azure_vm_default_user_name: jatin
+bucket_default: cloudman-gvl-410
+cloud_type: azure
+cluster_name: aaaaaaavmmmm
+cluster_storage_type: transient
+cluster_templates: []
+initial_cluster_type: Galaxy
+password: pass
+post_start_script_url: file:///opt/gvl/scripts/triggers.file///mnt/galaxy/gvl/poststart.d
+region_name: eastus
+resource_group: TEST-RG
+storage_account: eastussa123
+storage_size: null
+storage_type: transient
+worker_post_start_script_url: null
+
